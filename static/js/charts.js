@@ -94,7 +94,7 @@ function buildCharts(sample) {
     }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-     title: "Top 10 Bacteria Cultures Found",
+     title: "Top Bacteria",
      yticks: yticks,
      width: 1000
     };
@@ -109,7 +109,7 @@ function buildCharts(sample) {
       marker: {
         size: sample_values,
         color: otu_ids,
-        colorscale: otu_ids
+        colorscale: "Earth"
       },
       text: otu_labels,
       type: "scatter"
