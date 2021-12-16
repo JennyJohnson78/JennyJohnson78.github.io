@@ -1,4 +1,4 @@
-# Full Stack Belly Button Diversity Dashboard Webpage
+# Full Stack Data Visualization Dashboard Webpage
 
 ![image](https://user-images.githubusercontent.com/67409852/146320428-7e47681b-df64-4d87-8014-f095c8256b9d.png)
 
