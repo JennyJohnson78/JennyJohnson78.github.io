@@ -94,7 +94,6 @@ function buildCharts(sample) {
     }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-     title: "Top Bacteria",
      yticks: yticks,
      width: 1000
     };
