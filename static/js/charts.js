@@ -54,52 +54,51 @@ function buildMetadata(sample) {
   });
 }
 
-// 1. Create the buildChart function.
+// 1. Create the buildCharts function.
 function buildCharts(sample) {
-  // 2. Use d3.json to load the samples.json file 
-  d3.json("../../samples.json").then((data) => {
-    console.log(data);
-
+  // 2. Use d3.json to load and retrieve the samples.json file
+  // console.log(sample);
+  d3.json("samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
-    var samples = data.samples;
-
+    var rawData = data;
+    var rawSampleData = rawData.samples;
+    //console.log(rawSampleData)
     // 4. Create a variable that filters the samples for the object with the desired sample number.
-    var sampleArray = samples.filter(sampleObj => sampleObj.id == sample);
-    
-    // 5. Create a variable that holds the first sample in the array.
-    var result = sampleArray[0];
-
+    filteredSampleData = rawSampleData.filter(x => x.id == sample);
+    //console.log(filteredSampleData);
+    //  5. Create a variable that holds the first sample in the array.
+    firstSample = filteredSampleData[0];
+    // console.log(filteredSampleData)
+    //console.log(firstSample);
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
-    var otu_ids = result.otu_ids
-    var otu_labels = result.otu_labels
-    var sample_values = result.sample_values;
-    console.log(otu_ids)
-    console.log(otu_labels)
-    console.log(sample_values)
+    combo_table = filteredSampleData.map(x => ({ids: x.otu_ids, labels: x.otu_labels, values: x.sample_values})).sort((a,b) => b.values - a.values);
+    //console.log(combo_table);
+    otu_ids = combo_table[0].ids.map(x => x);
+    otu_ids_tagged = otu_ids.map(x => "OTU "+x);
+    //console.log(otu_ids);
+    otu_labels = combo_table[0].labels.map(x => x);
+    sample_values = combo_table[0].values.map(x => x);
 
     // 7. Create the yticks for the bar chart.
-    // Hint: Get the the top 10 otu_ids and map them in descending order 
-    // so the otu_ids with the most bacteria are last. 
-    var yticks = otu_ids.slice(0,10).map(id => "OTU ${id}").reverse();
+    // Hint: Get the the top 10 otu_ids and map them in descending order  
+    //  so the otu_ids with the most bacteria are last. 
 
+    var yticks = otu_ids.slice(0,10);
+    //console.log(otu_ids);
     // 8. Create the trace for the bar chart. 
-    var barData = [ {
+    var barData = [{
       x: sample_values.slice(0,10).reverse(),
-      y: yticks,
-      text: otu_labels,
-      type:"bar",
-      orientation: "h"
-      
+      y: otu_ids_tagged.slice(0,10).reverse(),
+      orientation: 'h',
+      type: 'bar',
+      text: otu_labels.slice(0,10).reverse()
     }];
-
     // 9. Create the layout for the bar chart. 
-    var barLayout = {      
-    title: "Top 10 Bacterial Species",
-    xaxis: {title: "Sample Values"},
-    yaxis: {title: "ID's"}
-           
+    var barLayout = {
+     title: "Top 10 Bacteria Cultures Found",
+     yticks: yticks,
+     width: 1000
     };
-
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
 
