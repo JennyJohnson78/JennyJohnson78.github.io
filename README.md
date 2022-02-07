@@ -2,6 +2,8 @@
 
 ## Overview
 
+Improbable Meat is a company that seeks to create beef alternatives from belly button bacteria. For this analysis, a completed panel of demographic information needs to be created, as well as visualizations for the bacterial data for each volunteer. Specifically, volunteers should be able to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, the volunteers will be able to identify whether that species is found in their navel.
+
 To be created:
 - Create a Horizontal Bar Chart
 - Create a Bubble Chart
