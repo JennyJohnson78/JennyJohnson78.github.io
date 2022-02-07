@@ -16,6 +16,30 @@ Deployment: https://jennyjohnson78.github.io/
 
 ### Create a Horizontal Bar Chart
 
+See charts.js for code that initiates charts
+
+- Create horizontal bar chart:
+```
+var yticks = otu_ids.slice(0,10);
+    //console.log(otu_ids);
+    // 8. Create the trace for the bar chart. 
+    var barData = [{
+      x: sample_values.slice(0,10).reverse(),
+      y: otu_ids_tagged.slice(0,10).reverse(),
+      orientation: 'h',
+      type: 'bar',
+      text: otu_labels.slice(0,10).reverse()
+    }];
+    // 9. Create the layout for the bar chart. 
+    var barLayout = {
+     title: "",
+     yticks: yticks,
+     width: 1000
+    };
+    // 10. Use Plotly to plot the data with the layout. 
+    Plotly.newPlot("bar", barData, barLayout);
+```
+
 ![image](https://user-images.githubusercontent.com/67409852/146320428-7e47681b-df64-4d87-8014-f095c8256b9d.png)
 
 ### Create a Bubble Chart
