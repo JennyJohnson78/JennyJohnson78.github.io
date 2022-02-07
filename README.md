@@ -77,6 +77,10 @@ See charts.js for code that initiates charts (buildCharts(); function)
 
 ### Customize the Dashboard
 
+- HTML and Bootstrap allow for jumbotron customization and the ability to filter by participant
+- 
 ![image](https://user-images.githubusercontent.com/67409852/152754064-031d991f-4911-40ef-8108-2f802b12cb6b.png)
 
 ## Summary
+
+Plant and non-meat sources of "meat" are the future of the American menu. With more and more people looking to remove animal meat from their diets, the demand for synthetic meat will only continue to grow. The creation of meat substitutes via belly button bacteria may be a solution to this growing demand. Part of the appeal of donating ones bacteria is the ability to see how their contribution is furthering this technology. By creating a webpage where volunteers can track their bacteria, data analytics illuminates the endless possibilities of people to interact with their own data.
