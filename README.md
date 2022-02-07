@@ -16,11 +16,11 @@ To be created:
 
 ### Create a Bubble Chart
 
-![image](https://user-images.githubusercontent.com/67409852/146320631-178452b3-db99-4d6d-8102-ace21a35aaa0.png)
+![image](https://user-images.githubusercontent.com/67409852/146321242-7f072c1b-4a54-4cdd-87ed-f46be3864bb4.png)
 
 ### Create a Gauge Chart
 
-![image](https://user-images.githubusercontent.com/67409852/146321242-7f072c1b-4a54-4cdd-87ed-f46be3864bb4.png)
+![image](https://user-images.githubusercontent.com/67409852/146320631-178452b3-db99-4d6d-8102-ace21a35aaa0.png)
 
 ### Customize the Dashboard
 
