@@ -20,7 +20,7 @@ See charts.js for code that initiates charts
 
 - Create horizontal bar chart:
 ```
-# Create horizonal bar chart
+// Create horizonal bar chart
     var yticks = otu_ids.slice(0,10);
     //console.log(otu_ids);
     // Create the trace for the bar chart. 
@@ -46,7 +46,7 @@ See charts.js for code that initiates charts
 ### Create a Bubble Chart
 
 ```
-# Create the layout for the bubble chart.
+// Create the layout for the bubble chart.
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
       xaxis:{title: "OTU ID"},
@@ -54,7 +54,7 @@ See charts.js for code that initiates charts
       margin: {pad: 5}
      };
 
-    # Use Plotly to plot the data with the layout.
+    // Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 ```
 
@@ -63,12 +63,12 @@ See charts.js for code that initiates charts
 ### Create a Gauge Chart
 
 ```
-#Create the layout for the gauge chart.
+// Create the layout for the gauge chart.
     var gaugeLayout = { 
      margin: {pad: 5}
     };
 
-    #Use Plotly to plot the gauge data and layout.
+    // Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
   });
 ```
