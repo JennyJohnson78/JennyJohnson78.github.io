@@ -8,6 +8,8 @@ To be created:
 - Create a Gauge Chart
 - Customize the Dashboard
 
+Deployment: https://jennyjohnson78.github.io/
+
 ## Results
 
 ### Create a Horizontal Bar Chart
@@ -23,5 +25,7 @@ To be created:
 ![image](https://user-images.githubusercontent.com/67409852/146320631-178452b3-db99-4d6d-8102-ace21a35aaa0.png)
 
 ### Customize the Dashboard
+
+![image](https://user-images.githubusercontent.com/67409852/152754064-031d991f-4911-40ef-8108-2f802b12cb6b.png)
 
 ## Summary
