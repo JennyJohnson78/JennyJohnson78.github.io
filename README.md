@@ -78,7 +78,7 @@ To be created:
 ### Customize the Dashboard
 
 - HTML and Bootstrap allow for jumbotron customization and the ability to filter by participant
-- 
+
 ![image](https://user-images.githubusercontent.com/67409852/152754064-031d991f-4911-40ef-8108-2f802b12cb6b.png)
 
 ## Summary
