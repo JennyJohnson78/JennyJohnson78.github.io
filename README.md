@@ -20,6 +20,7 @@ See charts.js for code that initiates charts
 
 - Create horizontal bar chart:
 ```
+# Create horizonal bar chart
     var yticks = otu_ids.slice(0,10);
     //console.log(otu_ids);
     // Create the trace for the bar chart. 
