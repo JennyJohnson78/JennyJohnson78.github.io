@@ -10,13 +10,13 @@ To be created:
 - Create a Gauge Chart
 - Customize the Dashboard
 
-Deployment: https://jennyjohnson78.github.io/
+# Deployment: https://jennyjohnson78.github.io/
 
 ## Results
 
 ### Create a Horizontal Bar Chart
 
-See charts.js for code that initiates charts (buildCharts(); function)
+# See charts.js for code that initiates charts (buildCharts(); function)
 
 - Create horizontal bar chart:
 ```
