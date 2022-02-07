@@ -16,7 +16,7 @@ Deployment: https://jennyjohnson78.github.io/
 
 ### Create a Horizontal Bar Chart
 
-See charts.js for code that initiates charts
+See charts.js for code that initiates charts (buildCharts(); function)
 
 - Create horizontal bar chart:
 ```
