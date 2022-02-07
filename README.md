@@ -62,6 +62,17 @@ See charts.js for code that initiates charts
 
 ### Create a Gauge Chart
 
+```
+#Create the layout for the gauge chart.
+    var gaugeLayout = { 
+     margin: {pad: 5}
+    };
+
+    #Use Plotly to plot the gauge data and layout.
+    Plotly.newPlot("gauge", gaugeData, gaugeLayout);
+  });
+```
+
 ![image](https://user-images.githubusercontent.com/67409852/146320631-178452b3-db99-4d6d-8102-ace21a35aaa0.png)
 
 ### Customize the Dashboard
