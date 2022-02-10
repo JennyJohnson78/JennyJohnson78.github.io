@@ -1,4 +1,4 @@
-# Data Visualization Dashboard Webpage
+# Data Visualization Dashboard Web Page
 
 ## Overview
 
