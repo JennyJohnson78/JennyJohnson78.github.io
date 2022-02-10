@@ -1,4 +1,4 @@
-# Full Stack Data Visualization Dashboard Webpage
+# Data Visualization Dashboard Webpage
 
 ## Overview
 
